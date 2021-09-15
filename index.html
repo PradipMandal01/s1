@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradip site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(65% 100% at 50% 0%, #00FF94 0%, rgba(0, 255, 148, 0.25) 100%), linear-gradient(230deg, #000000 25%, #170059 100%), linear-gradient(215deg, #FFEBB9 10%, #19004E 80%), radial-gradient(100% 245% at 100% 100%, #FFFFFF 0%, #000353 100%), linear-gradient(125deg, #1400FF 0%, #3A0000 100%), linear-gradient(225deg, #00F0FF 30%, #000B6F 45%, #00EBFC 45%, #001676 65%, #00E1F6 65%, #001676 85%, #00ECFD 85%, #001676 100%), linear-gradient(135deg, #00F0FF 0%, #000B6F 15%, #00EBFC 15%, #001676 35%, #00E1F6 35%, #001676 55%, #00ECFD 55%, #001676 100%);
+      background-blend-mode: soft-light, screen, overlay, overlay, difference, overlay, normal;
+
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .top {
+      position: absolute;
+      font-size: 2rem;
+      z-index: 2;
+      background: #29f0d5;
+      padding: 5px 30px;
+      border-radius: 20px;
+      border: solid 2px #000;
+      animation: ani 2s linear infinite;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    @keyframes ani {
+      0% {
+        color: #000353;
+      }
+
+      25% {
+        color: #ffffff;
+      }
+
+      50% {
+        color: #ff00ff;
+      }
+
+      75% {
+        color: #ffff00;
+      }
+
+      90% {
+        color: #ff2424;
+      }
+    }
+
+    #profile {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      height: 400px;
+      margin-top: 20px;
+    }
+
+    #pradip {
+      background-image: url(./pradip.png);
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      border: solid #000f0f 2px;
+      border-radius: 100px;
+    }
+
+    span {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    span a {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 50px;
+      font-size: 1.5rem;
+      height: 50px;
+      margin: 9px;
+      background: #ffffff;
+      border-radius: 100px;
+      box-shadow: -3px 0px 6px #ffffff, 0px -3px 6px #ffffff, 3px 0px 6px #8b8b8b,
+        0px 3px 6px #8b8b8b;
+    }
+
+    span a:first-child {
+      background: #4267b2;
+      color: #ffffff;
+    }
+
+    span a:nth-child(2) {
+      background: #1da1f2;
+      color: #ffffff;
+    }
+
+    span a:nth-child(3) {
+      background: radial-gradient(circle farthest-corner at 35% 90%,
+          #fec564,
+          transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%,
+          #5258cf,
+          transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%,
+          #893dc2,
+          transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+        linear-gradient(#6559ca,
+          #bc318f 30%,
+          #e33f5f 50%,
+          #f77638 70%,
+          #fec66d 100%);
+      color: #ffffff;
+    }
+
+    span a:nth-child(4) i {
+      font-size: 30px;
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="top">PRADIP</p>
+  <div id="profile">
+    <div id="pradip"></div>
+  </div>
+  <span>
+    <a href="https://m.facebook.com/"><i class="fab fa-facebook-f"
+  ></i></a>
+    <a href="https://twiter.com?lang=en/"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+    <a href="https://google.com/"><i class="fab fa-google"></i></a>
+  </span>
+</body>
+
+</html>
